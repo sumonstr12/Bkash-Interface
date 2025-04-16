@@ -52,7 +52,7 @@ class Action:
     def cash_out(self):
         print("Cash Out-")
         agent_num = input("Enter Agent Number: ")
-        total = int(input("Enter Amount"))
+        total = int(input("Enter Amount: "))
         pin = int(input("Enter PIN: "))
         if pin == self.pinp:
             self.amount = self.amount - total
