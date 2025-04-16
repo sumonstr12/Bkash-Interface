@@ -1,5 +1,7 @@
 from Account import Account
 from Authentication import Authentication
+
+filename = "./Data.txt"
 class Option:
 
     count = 0
@@ -9,7 +11,7 @@ class Option:
         print("===== Welcome to Bkash =====")
         
         self.account_no = int(input("Enter account NO: "))
-        acc = Authentication(self.account_no)
+        acc = Authentication(self.account_no, filename)
         if acc.Authenticate():
             return True
         else:

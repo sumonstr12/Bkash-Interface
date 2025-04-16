@@ -24,6 +24,8 @@ class FileHandling:
         if field in data:
             data[field] = str(newValue)
             self.write_file(data)
+        else:
+            print(f"Field '{field}' not found in the file.")
 
     def update_history(self, template, **kwargs):
         with open(self.filename, 'a') as file:

@@ -2,10 +2,18 @@ import os
 from Authentication import Authentication
 from Action import Action
 
+filename = "./Data.txt"
 class Account:
 
-    amount = Authentication.balance
-    number = Authentication.number
+    data = {}
+    auth = Authentication(filename=filename)
+    data = auth.data_function()
+    account_no = data['acc_no']
+    amount = int(data['balance'])
+    number = data['number']
+    pinp = int(data['pin'])
+
+    
     def __init__(self, account_no):
         self.account_no = account_no
     

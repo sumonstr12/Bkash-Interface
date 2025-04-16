@@ -5,3 +5,13 @@ CashOut 123 tk successfully to 121424
 Payment of 123 tk successfully to 123455 for invoice 2345
 Bill payment of 345 tk for Mobile
 Send 123 tk successfully to 1245
+Send 123 tk successfully to 12345
+Account balance is 671 tk
+Recharge 12 tk successfully to 123456
+Account balance is 659 tk
+Send 123 tk successfully to 12345
+Account balance is 536 tk
+Send 12 tk successfully to 1122423
+Account balance is 1988 tk
+Recharge 23 tk successfully to 11234
+Account balance is 1965 tk
