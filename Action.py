@@ -36,6 +36,9 @@ class Action:
         total = int(input("Enter Total Amount: "))
         pin = int(input("Enter PIN: "))
         if pin == self.pinp:
+            if self.amount < total:
+                print("Insufficient Balance..")
+                return False
             self.amount = self.amount - total
             self.obj1.update_field("balance", self.amount)
 
@@ -55,6 +58,9 @@ class Action:
         total = int(input("Enter Amount: "))
         pin = int(input("Enter PIN: "))
         if pin == self.pinp:
+            if self.amount < total:
+                print("Insufficient Balance..")
+                return False
             self.amount = self.amount - total
             self.obj1.update_field("balance", self.amount)
             tem = "CashOut {total} tk successfully to {num}\nAccount balance is {amount} tk"
@@ -73,6 +79,9 @@ class Action:
         invoice = input("Enter Invoice Number: ")
         pin = int(input("Enter PIN: "))
         if pin == self.pinp:
+            if self.amount < total:
+                print("Insufficient Balance..")
+                return False
             self.amount = self.amount - total
             self.obj1.update_field("balance", self.amount)
             tem = "Payment of {total} tk successfully to {num} for invoice {invoice}\nAccount balance is {amount} tk"
@@ -89,6 +98,9 @@ class Action:
         total = int(input("Enter Amount: "))
         pin = int(input("Enter PIN: "))
         if pin == self.pinp:
+            if self.amount < total:
+                print("Insufficient Balance..")
+                return False
             self.amount = self.amount - total
             self.obj1.update_field("balance", self.amount)
             tem = "Recharge {total} tk successfully to {num}\nAccount balance is {amount} tk"
@@ -145,6 +157,9 @@ class Action:
         total = int(input("Enter Amount: "))
         pin = int(input("Enter PIN: "))
         if pin == self.pinp:
+            if self.amount < total:
+                print("Insufficient Balance..")
+                return False
             self.amount = self.amount - total
             self.obj1.update_field("balance", self.amount)
             tem = "Bill payment of {total} tk for {bill_type}\nAccount balance is {amount} tk"
@@ -170,6 +185,9 @@ class Action:
         total = int(input("Enter Amount: "))
         pin = int(input("Enter PIN: "))
         if pin == self.pinp:
+            if self.amount < total:
+                print("Insufficient Balance..")
+                return False
             self.amount = self.amount - total
             self.obj1.update_field("balance", self.amount)
             tem = "Package {package_type} bought for {total} tk\nAccount balance is {amount} tk"
@@ -195,6 +213,9 @@ class Action:
         total = int(input("Enter Amount: "))
         pin = int(input("Enter PIN: "))
         if pin == self.pinp:
+            if self.amount < total:
+                print("Insufficient Balance..")
+                return False
             self.amount = self.amount - total
             self.obj1.update_field("balance", self.amount)
             tem = "Ticket {ticket_type} bought for {total} tk\nAccount balance is {amount} tk"
@@ -224,6 +245,9 @@ class Action:
         total = int(input("Enter Amount: "))
         pin = int(input("Enter PIN: "))
         if pin == self.pinp:
+            if self.amount < total:
+                print("Insufficient Balance..")
+                return False
             self.amount = self.amount - total
             self.obj1.update_field("balance", self.amount)
             tem = "Product {product_name} bought for {total} tk\nAccount balance is {amount} tk"

@@ -1,4 +1,4 @@
 acc_no: 12345
 pin: 1234
-balance: 1965
+balance: 1176
 number: 01300193463

@@ -15,3 +15,9 @@ Send 12 tk successfully to 1122423
 Account balance is 1988 tk
 Recharge 23 tk successfully to 11234
 Account balance is 1965 tk
+Ticket Movie bought for 123 tk
+Account balance is 1842 tk
+Payment of 234 tk successfully to 12345 for invoice 4321
+Account balance is 1608 tk
+CashOut 432 tk successfully to 123456
+Account balance is 1176 tk
